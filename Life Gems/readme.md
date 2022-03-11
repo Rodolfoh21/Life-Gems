@@ -15,7 +15,7 @@ Once that is done, you'll have to install django again and upgrade pip again as 
 If you are to install anything else within the virtual environment, PLEASE update the requirements.txt file so that we can all keep track of the dependencies needed. You can update the requirements.txt file by using the command line:
   python -m pip freeze > requirements.txt
 
-Please do not upload your venv file onto GitHub. We all have different machines, and quite frankly I'm not even sure of the problems that can occur if we were to accidently download the file. We could possibly hit a roadblock and be trying to fix whatever mess that caused. So to avoid any problems with that, just don't upload it. 
+Please do not upload your venv file onto GitHub. We all have different machines, and quite frankly I'm not even sure of the problems that can occur if we were to accidently download the file. We could possibly hit a roadblock and be trying to fix whatever mess that caused. So to avoid any problems with that, just don't upload it. If by chance that were to have happened. It isn't the end of the work. We can just create another virtual environment. You would however, would have to reinstall all of the dependencies. Please don't delete the requirements.txt by any means. 
 
 Remember to review any Django tutorials if you have any problems. If you work on an app, don't forget to apply the migrations so your work is saved. The command line is:
   python manage.py migrations
@@ -27,3 +27,12 @@ If you are going to make another app, use the command line:
   django-admin startapp <app_label>
 
 In order to have better organization, all apps are in the apps folder. Please read up on apps and their uses. Its going to be extremely important, especially if we don't want to clutter our code or be confused with what's where.
+
+The database for the project was left as the default database it uses, which is the sqlite3 database, if you were wondering why that was there. We are however, using the mySQL database. so that would be updated soon after. 
+
+All folders were arranged according to this schema:
+  https://studygyaan.com/django/best-practice-to-structure-django-project-directories-and-files#:~:text=For%20creating%20Django%20project%20apps%20you%20need%20to,you%20will%20find%20the%20app_1%20folder%20inside%20it.
+
+If there are any changes in how everything is organized, please tell in the discord. This way we can find out if there is anything we need to do to accommodate such changes. Especially since it affects they way django accesses the required files.
+
+That's all for now,  but please update whatever changes you have made onto GitHub and through the discord server.
