@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="nav__links", id="menu">
+				<li><a href="/">Home</a></li>
+				<li><a href="/cart/">Shop</a></li>
+				<li><a href="#">Primo</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>	
+		<a href="/cart/"><img src="{% static 'img/cart.png' %}"></a>
+	</header>
+</body>
+<br/><br/>
+
+{% block content %}
+
+{% endblock %}
+
+<br/><br/>
+Footer stuff
+</html>
