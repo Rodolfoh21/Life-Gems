@@ -1,10 +1,19 @@
 Hey Guys, Rodolfo Here.
 
-Some important things to clarify first. Please check the requirements.txt and install that version of Django and upgrade pip to that version. Once you have cloned this repository into whatever directory you wanted, make sure to create a virtual environment within the folder "Life Gems". In order to create a virtual environment, use the command line:
+Some important things to clarify first. Please check the requirements.txt and install that version of Django and upgrade pip to that version. Once you have cloned this repository into whatever directory you wanted, make sure to create a virtual environment within the folder "Life Gems". In order to create a virtual environment for Windows 10 & 11, use the command line in the powershell:
   python -m venv venv
+Depending on the version of python installed on your computer the command can either be:
+  python -m venv venv
+  or
+  python3 -m venv venv
 
-You should see a folder named "venv" that has been created. Now we have to activate the environment, if you are on windows, open Powershell and navigate to the "Life Gems" directory. then use this command line:
+The second "venv" is the name of the virtual environment and you can name it whatever you want. You should see a folder named "venv" that has been created. Look through the folder and try to find the "Scripts" folder. If it exists, you'll find a file called "activate". Alternatively if it doesn't exist, it will be in the "bin" folder. Depending on the operating system you're using, the command is a little different. Now we have to activate the environment, if you are on windows, open Powershell and navigate to the "Life Gems" directory. then use this command line:
   ./venv/Scripts/activate
+  or
+On Mac it may be:
+  Source /venv/bin/activate
+
+Depending where the activate file is located, you can change "Scripts" to "bin" and vice versa.
 
 If it was successful, you should see this in front of your directory:
   (venv) PS C:/Users
@@ -14,6 +23,9 @@ Once that is done, you'll have to install django again and upgrade pip again as 
 
 If you are to install anything else within the virtual environment, PLEASE update the requirements.txt file so that we can all keep track of the dependencies needed. You can update the requirements.txt file by using the command line:
   python -m pip freeze > requirements.txt
+
+To download from the requirements.txt file use the command:
+  pip install -r requirements.txt
 
 Please do not upload your venv file onto GitHub. We all have different machines, and quite frankly I'm not even sure of the problems that can occur if we were to accidently download the file. We could possibly hit a roadblock and be trying to fix whatever mess that caused. So to avoid any problems with that, just don't upload it. If by chance that were to have happened. It isn't the end of the work. We can just create another virtual environment. You would however, would have to reinstall all of the dependencies. Please don't delete the requirements.txt by any means. 
 
@@ -35,4 +47,5 @@ All folders were arranged according to this schema:
 
 If there are any changes in how everything is organized, please tell in the discord. This way we can find out if there is anything we need to do to accommodate such changes. Especially since it affects they way django accesses the required files.
 
+Also, consider using Visual Studio Code. It has great workability with Github and should be fairly helpful, otherwise,
 That's all for now,  but please update whatever changes you have made onto GitHub and through the discord server.
