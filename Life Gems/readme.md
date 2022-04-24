@@ -49,3 +49,4 @@ If there are any changes in how everything is organized, please tell in the disc
 
 Also, consider using Visual Studio Code. It has great workability with Github and should be fairly helpful, otherwise,
 That's all for now,  but please update whatever changes you have made onto GitHub and through the discord server.
+<>
