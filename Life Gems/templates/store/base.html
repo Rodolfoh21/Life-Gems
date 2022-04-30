@@ -1,13 +1,30 @@
 {% load static %}
 
 <!DOCTYPE html><head>
+	<!-- Meta Tags-->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!--CSS Style-->
 	<link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+	<title>Life Gems</title>
+	<style>
+		nav{
+			background-color: lightcyan;
+		}
+		.one-edge-shadow {
+			box-shadow: 0 8px 2px -5px rgb(207, 202, 202);
+		}
+		.display-8 {
+			font-weight: 200;
+			font-size: 30px;
+		}
+	</style>
 </head>
 <body>
 	<header>
+		<!--Navbar-->
 		<nav>
 			<ul class="nav__links", id="menu">
 				<li><a href="/">Home</a></li>

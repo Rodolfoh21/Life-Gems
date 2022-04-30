@@ -43,26 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'store.apps.StoreConfig',
-    'authentication',
-    'store',
-    'users',
-    'rest_framework',
-    'rest_framework.authtoken',
-    'rest_auth',
+    'apps.store.apps.StoreConfig',
 ]
 
-AUTH_USER_MODEL = 'store.Customer'
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ), 
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.BasicAuthentication',
-    )
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -105,7 +88,18 @@ DATABASES = {
     }
 }
 
-
+#DATABASES = {
+   # "default": {
+   #     "ENGINE": "mssql",
+   #     "NAME": "Life_Gems",
+   #     "USER": "cpsc362",
+   #     "PASSWORD": "student",
+   #     "HOST": "192.168.1.13",
+   #     "PORT": "1433",
+    #    "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server", 
+    #    },
+ #   },
+#}
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
